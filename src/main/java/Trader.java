@@ -87,10 +87,7 @@ public class Trader {
     }
 
     public static void main(String[] args) {
-        /*
-         * After writing your own Tradable object, add an instance (or multiple
-         * instances of it) to the all_items list below.
-         */
+
 
         Trader trader1 = new Trader(all_items);
         Trader trader2 = new Trader(all_items);
