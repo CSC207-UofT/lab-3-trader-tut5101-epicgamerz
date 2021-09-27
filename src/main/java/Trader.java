@@ -7,19 +7,17 @@
 
 import java.util.*;
 
-
 public class Trader {
     private ArrayList<Tradable> inventory;
     private ArrayList<Tradable> wishlist;
     private int money;
 
-
     /**
-     * Construct a Trader, randomly giving them both an inventory and
-     * a wishlist using the items in item_list.
+     * Construct a Trader, randomly giving them both an inventory and a wishlist
+     * using the items in item_list.
      *
-     * @param item_list A List of Tradable objects that may be placed in
-     *                  either this Trader's inventory or wishlist.
+     * @param item_list A List of Tradable objects that may be placed in either this
+     *                  Trader's inventory or wishlist.
      */
     public Trader(List<Tradable> item_list) {
         // Select a random number between [20, 120) for money
@@ -37,13 +35,12 @@ public class Trader {
 
         // Add the relevant items to the inventory and wishlist
         this.inventory = new ArrayList<>(copy.subList(0, num_inventory_items));
-        this.wishlist = new ArrayList<>(copy.subList(num_inventory_items,
-                num_inventory_items + num_wishlist_items));
+        this.wishlist = new ArrayList<>(copy.subList(num_inventory_items, num_inventory_items + num_wishlist_items));
     }
 
     /**
-     * Exchange money from other to this Trader according to the price of item,
-     * if other has enough money. Otherwise, returns False.
+     * Exchange money from other to this Trader according to the price of item, if
+     * other has enough money. Otherwise, returns False.
      *
      * @return True if the exchange was completed.
      */
@@ -57,8 +54,8 @@ public class Trader {
     }
 
     /**
-     * Attempt to sell all items that are in both this Trader's inventory
-     * and in other's wishlist.
+     * Attempt to sell all items that are in both this Trader's inventory and in
+     * other's wishlist.
      *
      * @return True iff at least one item was sold from this Trader to other
      */
@@ -90,20 +87,8 @@ public class Trader {
     }
 
     public static void main(String[] args) {
-        /* After writing your own Tradable object, add an instance
-         * (or multiple instances of it) to the all_items list below.
-         */
-        List<Tradable> all_items = Arrays.asList(
-                new Horse(),
-                new Horse(),
-                new Horse(),
-                new Basketball(),
-                new Basketball()
-        );
 
-        /* Below, we've created two Traders. Their money, inventory, and
-         * wishlists are randomly generated (see the constructor above).
-         */
+
         Trader trader1 = new Trader(all_items);
         Trader trader2 = new Trader(all_items);
 
