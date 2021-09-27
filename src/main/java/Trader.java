@@ -92,11 +92,6 @@ public class Trader {
          * instances of it) to the all_items list below.
          */
 
-
-        /*
-         * Below, we've created two Traders. Their money, inventory, and wishlists are
-         * randomly generated (see the constructor above).
-         */
         Trader trader1 = new Trader(all_items);
         Trader trader2 = new Trader(all_items);
 
