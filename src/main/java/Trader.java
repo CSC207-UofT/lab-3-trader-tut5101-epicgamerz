@@ -102,7 +102,7 @@ public class Trader {
                 new Gamer(),
                 new Cat("Black"),
                 new Car(10, 10),
-                new Pokemon()
+                new Pokemon(),
                 new Basketball(),
                 new Basketball(),
                 new Gamer(),
