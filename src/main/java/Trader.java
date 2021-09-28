@@ -87,7 +87,19 @@ public class Trader {
     }
 
     public static void main(String[] args) {
-
+        List<Tradable> all_items = Arrays.asList(
+                new Horse(),
+                new Horse(),
+                new Horse(),
+                new Horse(),
+                new Horse(),
+                new Horse(),
+                new Gamer(),
+                new Gamer(),
+                new Cat("Black"),
+                new Car(10, 10),
+                new Pokemon()
+        );
 
         Trader trader1 = new Trader(all_items);
         Trader trader2 = new Trader(all_items);

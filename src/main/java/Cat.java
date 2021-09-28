@@ -5,6 +5,10 @@
 public class Cat implements Domesticatable, Tradable {
     private String color;
 
+    /**
+     * 
+     * @param color
+     */
     public Cat(String color) {
         this.color = color;
     }
