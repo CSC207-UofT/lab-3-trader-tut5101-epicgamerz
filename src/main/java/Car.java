@@ -3,6 +3,11 @@ public class Car implements Drivable, Tradable {
     private int price;
     static int maxSpeed; // flaw is here lol
 
+    /**
+     * 
+     * @param price
+     * @param speed
+     */
     public Car(int price, int speed) {
         this.price = price;
         this.maxSpeed = speed;
