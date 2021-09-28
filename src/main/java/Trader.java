@@ -87,7 +87,24 @@ public class Trader {
     }
 
     public static void main(String[] args) {
+        /* After writing your own Tradable object, add an instance
+         * (or multiple instances of it) to the all_items list below.
+         */
+        List<Tradable> all_items = Arrays.asList(
+                new Horse(),
+                new Horse(),
+                new Horse(),
+                new Basketball(),
+                new Basketball(),
+                new Gamer(),
+                new Pokemon(),
+                new Car(50000, 200),
+                new Cat("red")
+        );
 
+        /* Below, we've created two Traders. Their money, inventory, and
+         * wishlists are randomly generated (see the constructor above).
+         */
 
         Trader trader1 = new Trader(all_items);
         Trader trader2 = new Trader(all_items);
